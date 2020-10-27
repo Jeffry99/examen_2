@@ -8,6 +8,7 @@ package org.una.examen.provincias.services;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.una.examen.provincias.dtos.DistritoDTO;
 import org.una.examen.provincias.entities.Distrito;
@@ -19,6 +20,7 @@ import org.una.examen.provincias.utils.ServiceConvertionHelper;
  *
  * @author Jeffry
  */
+@Service
 public class DistritoServiceImplementation implements IDistritoService{
     @Autowired
     private IDistritoRepository distritoRepository;
