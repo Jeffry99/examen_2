@@ -7,6 +7,7 @@ package org.una.examen.provincias.repositories;
 
 import java.util.List;
 import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.una.examen.provincias.entities.Unidad;
@@ -15,7 +16,7 @@ import org.una.examen.provincias.entities.Unidad;
  *
  * @author Jeffry
  */
-public interface IUnidadRepository {
+public interface IUnidadRepository extends JpaRepository<Unidad, Long>{
     public List<Unidad> findByNombreContainingIgnoreCase(String nombre);
     public Optional<Unidad> findByCodigo(int codigo);
     
