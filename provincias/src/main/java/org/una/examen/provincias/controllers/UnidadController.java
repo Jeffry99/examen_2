@@ -72,7 +72,7 @@ public class UnidadController {
         }
     }
     
-    @GetMapping("/list/provincia/{term}") 
+    @GetMapping("/list/distrito/{term}") 
     public ResponseEntity<?> findByDistrito(@PathVariable(value = "term") Long term) {
         try {
             return new ResponseEntity(unidadService.findByDistrito(term), HttpStatus.OK);

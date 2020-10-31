@@ -5,10 +5,20 @@
  */
 package org.una.examen.provincias.dtos;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 /**
  *
  * @author Jeffry
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor 
+@ToString
+
 public class DistritoDTO {
     private Long id;
     private String nombre;

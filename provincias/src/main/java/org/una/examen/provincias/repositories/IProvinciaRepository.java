@@ -17,4 +17,5 @@ import org.una.examen.provincias.entities.Provincia;
 public interface IProvinciaRepository extends JpaRepository<Provincia, Long>{
     public List<Provincia> findByNombreContainingIgnoreCase(String nombre);
     public Optional<Provincia> findByCodigo(int codigo);
+    //public int sum();
 }

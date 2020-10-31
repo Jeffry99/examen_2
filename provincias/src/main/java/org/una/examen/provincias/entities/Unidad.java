@@ -46,6 +46,9 @@ public class Unidad implements Serializable{
     @Column
     private Long poblacion;
     
+    @Column(length = 25)
+    private String tipo;
+    
     @ManyToOne
     @JoinColumn(name="distrito", nullable = false)
     private Distrito distrito;
